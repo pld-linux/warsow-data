@@ -8,6 +8,7 @@ License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://data.rodix.free.fr/warsow/files/warsow_%{version}_unified.zip
 # Source0-md5:	d0cb961256bbc1b93bf240b8bcf8eff5
+Patch0:		%{name}-paths.patch
 URL:		http://www.warsow.net/
 BuildRequires:	unzip
 BuildArch:	noarch
@@ -21,6 +22,7 @@ Pliki danych dla gry Warsow.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT

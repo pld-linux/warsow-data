@@ -1,0 +1,51 @@
+--- warsow-0.5/warsow.orig	2010-05-06 02:12:37.142204911 +0200
++++ warsow-0.5/warsow	2010-05-06 02:11:46.518668177 +0200
+@@ -5,12 +5,12 @@
+ # Location of Warsow binaries?
+ # Leave empty to use the directory of this script
+ 
+-BINARY_DIR=
++BINARY_DIR=/usr/bin
+ 
+ # Location of Warsow binaries?
+ # Leave empty to use the directory of the binaries
+ 
+-DATA_DIR=
++DATA_DIR=/usr/share/warsow
+ 
+ # Whether to use ~/.warsow directory? (0 or 1)
+ # Leave empty to set to 1 if DATA_DIR doesn't have write permissions
+--- warsow-0.5/wsw_server.orig	2010-05-06 02:12:52.218670351 +0200
++++ warsow-0.5/wsw_server	2010-05-06 02:14:16.858872943 +0200
+@@ -5,12 +5,12 @@
+ # Location of Warsow binaries?
+ # Leave empty to use the directory of this script
+ 
+-BINARY_DIR=
++BINARY_DIR=/usr/bin
+ 
+ # Location of Warsow binaries?
+ # Leave empty to use the directory of the binaries
+ 
+-DATA_DIR=
++DATA_DIR=/usr/share/warsow
+ 
+ # Whether to use ~/.warsow directory? (0 or 1)
+ # Leave empty to set to 1 if DATA_DIR doesn't have write permissions
+--- warsow-0.5/wswtv_server.orig	2010-05-06 02:13:22.939491993 +0200
++++ warsow-0.5/wswtv_server	2010-05-06 02:13:57.341988552 +0200
+@@ -5,12 +5,12 @@
+ # Location of Warsow binaries?
+ # Leave empty to use the directory of this script
+ 
+-BINARY_DIR=
++BINARY_DIR=/usr/bin
+ 
+ # Location of Warsow binaries?
+ # Leave empty to use the directory of the binaries
+ 
+-DATA_DIR=
++DATA_DIR=/usr/share/warsow
+ 
+ # Whether to use ~/.warsow directory? (0 or 1)
+ # Leave empty to set to 1 if DATA_DIR doesn't have write permissions
