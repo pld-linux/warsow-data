@@ -2,12 +2,12 @@
 Summary:	Warsow - data files for game
 Summary(pl.UTF-8):	Warsow - pliki danych dla gry
 Name:		warsow-data
-Version:	0.5
-Release:	0.2
+Version:	0.6
+Release:	0.1
 License:	GPL v2+
 Group:		X11/Applications/Games
-Source0:	http://data.rodix.free.fr/warsow/files/warsow_%{version}_unified.zip
-# Source0-md5:	d0cb961256bbc1b93bf240b8bcf8eff5
+Source0:	http://www.zcdn.org/dl/warsow_%{version}_unified.zip
+# Source0-md5:	0b17543fb7fbd65ffe607293116cc376
 Patch0:		%{name}-paths.patch
 URL:		http://www.warsow.net/
 BuildRequires:	unzip
@@ -29,7 +29,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/warsow}
 
 install warsow wsw_server wswtv_server $RPM_BUILD_ROOT%{_bindir}
-cp -r basewsw $RPM_BUILD_ROOT%{_datadir}/warsow
+cp -a basewsw $RPM_BUILD_ROOT%{_datadir}/warsow
 
 %clean
 rm -rf $RPM_BUILD_ROOT
