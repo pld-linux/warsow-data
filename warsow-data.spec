@@ -3,7 +3,7 @@ Summary:	Warsow - data files for game
 Summary(pl.UTF-8):	Warsow - pliki danych dla gry
 Name:		warsow-data
 Version:	0.6
-Release:	0.1
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://www.zcdn.org/dl/warsow_%{version}_unified.zip
