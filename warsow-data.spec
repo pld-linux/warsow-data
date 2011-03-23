@@ -1,13 +1,15 @@
-#
+
+%define		sname warsow
+
 Summary:	Warsow - data files for game
 Summary(pl.UTF-8):	Warsow - pliki danych dla gry
 Name:		warsow-data
-Version:	0.6
+Version:	0.61
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://www.zcdn.org/dl/warsow_%{version}_unified.zip
-# Source0-md5:	0b17543fb7fbd65ffe607293116cc376
+# Source0-md5:	dd17ffccf51579e6b278624727190c01
 Patch0:		%{name}-paths.patch
 URL:		http://www.warsow.net/
 BuildRequires:	unzip
@@ -21,7 +23,7 @@ Warsow data files.
 Pliki danych dla gry Warsow.
 
 %prep
-%setup -q -c
+%setup -q -n %{sname}_%{version}_unified
 %patch0 -p1
 
 %install
